@@ -1,0 +1,263 @@
+
+
+.hero-section{
+    position: block;
+    display: flex;
+    width: 100vw;
+}
+
+@media(max-width = 1000px){
+    .header {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.left-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.right-hero-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.abs-header{
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10%;
+}
+
+.se-logo{
+    width: 187px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.burger-logo{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.right-hero-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    padding-left: 50px;
+    max-width: 670px;
+    padding-right: 70px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.left-hero-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    padding-left: 70px;
+    max-width: 670px;
+    padding-right: 50px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.left_hero_title{
+    color: white;
+    width: fit-content;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 2.5;
+}
+
+.left_hero_subtitle{
+    font-family: 'Noto Sans Mono', sans-serif;
+    color: black;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.right_hero_title{
+    color: black;
+    width: fit-content;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 2.5;
+}
+
+.right_hero_subtitle{
+    font-family: 'Noto Sans Mono', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.txt{
+    font-family: 'Noto Sans Mono', sans-serif;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.hero_txt{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 10ch;
+}
+
+.left_button{
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 800;
+    background-color: black;
+    cursor: pointer;
+}
+
+.right_button{
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hello-world{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10%;
+}
+
+.hello-world-title{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    color: black;
+    text-align: left;
+    background-color: white;
+    line-height: 1.4;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.arrow{
+    padding: 10px 0px 10px 20px;
+    font-weight: 900;
+    font-size: 36px;
+    color: #28eea7;
+    background-color: white;
+}
+
+.hello-world-circles{
+    display: flex;
+    gap: 10px;
+}
+
+.circle{
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+}
+
+.black{
+    background-color: black;
+}
+.light-grey{
+    background-color: lightgrey;
+}
+.green{
+    background-color: #28eea7;
+}
+
+
+.youtube-links{
+    border: 15px solid #28eea7 ;
+    object-fit: fill;
+    border-radius: 20px;
+    max-width: 1340px;
+}
+
+.milestones-content{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.milestones-left-section{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 70px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.milestones-right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.mil-card{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
