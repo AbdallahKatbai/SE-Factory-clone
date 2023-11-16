@@ -30,9 +30,22 @@ setInterval(() => {
         color_change('rgb(251 80 142 / 93%)') //pink
     }, 8000);
 }, 12000);
+
+let initial_left_subtitle = document.getElementsByClassName("left_hero_subtitle")[0]
+const left_subtitle = initial_left_subtitle.innertxt
+setInterval(() => {
+
+    
+}, 12000);
+setInterval(() => {
+    left_subtitle.forEach(elm => {
+        
+    })
+}, 4000);
 //anvbar variables
 const list = document.querySelectorAll(' .list')
 const navbar = document.getElementsByTagName("section")[1]
+const a = document.querySelectorAll(' .list')
 
 burger_logo.addEventListener('click', (() => {
     navbar.classList.remove('hide')
@@ -41,3 +54,9 @@ burger_logo.addEventListener('click', (() => {
 cancle.addEventListener('click', (() => {
     navbar.classList.add('hide')
 }))
+
+a.forEach((elm) => {
+    elm.addEventListener('click', (() => {
+        navbar.classList.add('hide')}
+))
+})

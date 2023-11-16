@@ -3,10 +3,20 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 img{
     object-fit: contain;
     width: 100%;
     height: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
 }

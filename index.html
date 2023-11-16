@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="page">
+    <div id = "home" class="page">
         <section class="hero-section">
             <div class="left-hero">
                 <div class="left-hero-img">
@@ -19,7 +19,10 @@
 
                 <div class="left-hero-content">
                     <div class="left_hero_title">WANT TO BECOME A</div>
-                    <div class="left_hero_subtitle">ENGINEER</div>
+                    <div class="left_hero_subtitle-container">
+                        <div class="left_hero_subtitle">ENGINEER</div>
+                        <div class="underscore">_</div>
+                    </div>
                     <div class="hero_txt txt">Jumpstart your journey in tech with our courses in Computer Science, Full-Stack Web development, Data Engineering and UI/UX Design. Get hands-on experience and gain essential skills for a successful tech career.</div>
                     <a href = "#" class="left_button txt">#GET_TRAINED</a>
                 </div>
@@ -50,7 +53,7 @@
 
         </section>
 
-        <section class="hide page2">
+        <section id = "page2" class="hide page2">
                 <div class="abs-header">
                     <div class="se-logo">
                         <img src="assets/se-logo (2).png" alt="">
@@ -61,10 +64,10 @@
                 </div>
                 <div class="page2-container">
                     <div class="page2-list">
-                        <a href="#" class="list">Home</a>
-                        <a href="#" class="list">Hello world!</a>
-                        <a href="#" class="list">Milestones</a>
-                        <a href="#" class="list">Programs</a>
+                        <a hr="#home" class="list">Home</a>
+                        <a href="#hello-world" class="list">Hello world!</a>
+                        <a href="#milestones" class="list">Milestones</a>
+                        <a href="#programs" class="list">Programs</a>
                         <a href="#" class="list">Hire talent</a>
                         <a href="#" class="list">Testimonials</a>
                         <a href="#" class="list">FAQs</a>
@@ -103,7 +106,7 @@
                 </div>
         </section>
 
-        <section class = "hello-world">
+        <section id = "hello-world" class = "hello-world">
             <div class="header">
                 <div class="hello-world-title">
                     <div class="arrow">></div>
@@ -112,7 +115,7 @@
                 <div class="hello-world-circles">
                     <div class="black circle"></div>
                     <div class="light-grey circle"></div>
-                    <div class="green circle"></div>
+                    <div class="circle green"></div>
                 </div>
             </div>
             <div class="youtube-links">
@@ -120,7 +123,7 @@
             </div>
         </section>
 
-        <section class="milestones">
+        <section id = "milestones" class="milestones">
             <div class="header">
                 <div class="hello-world-title">
                     <div class="arrow">></div>
@@ -129,7 +132,7 @@
                 <div class="hello-world-circles">
                     <div class="black circle"></div>
                     <div class="light-grey circle"></div>
-                    <div class="green cirlce"></div>
+                    <div class="circle green"></div>
                 </div>
             </div>
             <div class="milestones-content">
@@ -178,18 +181,140 @@
 
         </section>
 
-        <section class="programs">
+        <section id = "programs" class="programs">
+            <div class="programs-header">
+                <div class="programs-title">
+                    <div class="arrow2">></div>
+                    <div class="title2">Programs</div>
+                </div>
+                <div class="hello-world-circles">
+                    <div class="white circle"></div>
+                    <div class="light-grey circle"></div>
+                    <div class="circle black"></div>
+                </div>
+            </div>
 
+            <div class="programs-container">
+                <div class="programs-titles">
+                    <div class="sub-title orange-pressed-txt">FCS</div>
+                    <div class="sub-title green-pressed-txt">FSW</div>
+                    <div class="sub-title purple-pressed-txt">FSD</div>
+                    <div class="sub-title pink-pressed-txt">UIX</div>
+                </div>
+                <div class="programs-contents">
+                    <div class="programs-content-wrapper">
+                    <div class="programs-content">
+                        <div class="programs-txt">
+                            <div class="content-title">
+                                <div class="title-fcs orange-txt">> FCS: </div>
+                                <div class="title-2">Foundations of Computer Science</div>
+                            </div>
+                            <div class="content-paragraph">
+                                // This 9-week course covers fundamental topics in computer science, including data structures, algorithms, and foundational concepts. It is suitable for coding enthusiasts, former computer science students, and beginners who wish to learn Python programming, object-oriented programming, file systems, and more. The course includes online video materials, assignments, and instructor-led sessions.
+                            </div>
+                        </div>
+                        <div class="programs-footer">
+                            <div class = "next-bootcamp">
+                                <div class="next-bootcamp-date">next bootcamp date  |</div>
+                                <div class="to-be-confirmed orange-txt">To be confirmed</div>
+                            </div>
+                            <a class="learn-more">LEARN MORE ></a>
+                        </div>
+                    </div>
+                    <div class="programs-img">
+                        <img src="assets/fcs.png" alt="programs-img">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="programs-contents">
+                    <div class="programs-content-wrapper">
+                    <div class="programs-content">
+                        <div class="programs-txt">
+                            <div class="content-title">
+                                <div class="title-fsw green-txt">> FSW: </div>
+                                <div class="title-2">Full-Stack Web Development</div>
+                            </div>
+                            <div class="content-paragraph">
+                                // Our 14-week bootcamp is designed to equip aspiring developers with the technical and interpersonal skills needed to become professional software engineers. Participants will learn essential concepts such as Version Control, Object-Oriented Programming, Database Management Systems, MVC Design Patterns, Dependency Management, modern Web Frameworks, and AWS. The program also includes a soft-skills curriculum covering Communication & Interpersonal Skills, Professional Writing, Technical Presentations, Negotiation, and Interviewing, which will be taught through lectures, weekly projects, tech talks, and a final project to showcase their learning.
+                            </div>
+                        </div>
+                        <div class="programs-footer">
+                            <div class = "next-bootcamp">
+                                <div class="next-bootcamp-date">next bootcamp date  |</div>
+                                <div class="to-be-confirmed green-txt">To be confirmed</div>
+                            </div>
+                            <a class="learn-more">LEARN MORE ></a>
+                        </div>
+                    </div>
+                    <div class="programs-img">
+                        <img src="assets/fsw.png" alt="programs-img">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="programs-contents">
+                    <div class="programs-content-wrapper">
+                    <div class="programs-content">
+                        <div class="programs-txt">
+                            <div class="content-title">
+                                <div class="title-fsd purple-txt">> FSD: </div>
+                                <div class="title-2">Full-Stack Data</div>
+                            </div>
+                            <div class="content-paragraph">
+                                // SE Factory's 12-week Full-Stack Data course offers robust training in data analysis and engineering. Participants learn to handle large data sets with Python and use libraries like Pandas, NumPy, and Matplotlib for data manipulation and visualization. The course also delves into cloud orchestration, distributed computing, relational databases, and SQL basics. Hands-on projects provide real-world data analysis experience. Upon completion, students gain proficiency in Python for analytics, understand data warehousing, and can effectively visualize and present data insights.
+                        </div>
+                        </div>
+                        <div class="programs-footer">
+                            <div class = "next-bootcamp">
+                                <div class="next-bootcamp-date">next bootcamp date  |</div>
+                                <div class="to-be-confirmed purple-txt">To be confirmed</div>
+                            </div>
+                            <a class="learn-more">LEARN MORE ></a>
+                        </div>
+                    </div>
+                    <div class="programs-img">
+                        <img src="assets/fsd.png" alt="programs-img">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="programs-contents">
+                    <div class="programs-content-wrapper">
+                    <div class="programs-content">
+                        <div class="programs-txt">
+                            <div class="content-title">
+                                <div class="title-uix pink-txt">> UIX: </div>
+                                <div class="title-2">UI/UX Design Bootcamp</div>
+                            </div>
+                            <div class="content-paragraph">
+                                // SE Factory's 6-week UI/UX course offers immersive learning in UI/UX design. It encompasses the essentials of UI/UX, from mastering Figma, color psychology, typography to UX heuristics, prototyping and WCAG guidelines. Learners work on projects, transforming wireframes into mockups, and creating responsive interfaces. The course culminates in a final project, enabling students to conduct a thorough UX audit, revamp a website, and create a well-documented case study. Graduates leave equipped with a polished portfolio and market-ready skills in UI/UX design.
+                            </div>
+                        </div>
+                        <div class="programs-footer">
+                            <div class = "next-bootcamp">
+                                <div class="next-bootcamp-date">next bootcamp date  |</div>
+                                <div class="to-be-confirmed pink-txt">To be confirmed</div>
+                            </div>
+                            <a class="learn-more">LEARN MORE ></a>
+                        </div>
+                    </div>
+                    <div class="programs-img">
+                        <img src="assets/648ae6ac6c902afee33f9630_uix.png" alt="programs-img">
+                    </div>
+                    </div>
+                </div>
+            </div>
 
 
         </section>
 
-        <section class="hire-tilent">
+        <section id = "hire-talent" class="hire-tilent">
 
 
         </section>
 
-        <section class="testimonials">
+        <section id = "testimonials" class="testimonials">
 
 
         </section>
