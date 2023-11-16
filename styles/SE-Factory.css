@@ -611,25 +611,10 @@ body{
     border-radius: 10px 10px 0 0;
     padding: 20px 50px;
     font-weight: 900;
+    color: black;
 }
 
-.orange-pressed-txt{
-    color: rgb(255, 198, 53);
-    background-color: #363738;
-}
-
-.green-pressed-txt{
-    color: #28eea7;
-    background-color: #363738;
-}
-
-.purple-pressed-txt{
-    color: rgb(152, 100, 218);
-    background-color: #363738;
-}
-
-.pink-pressed-txt{
-    color: rgb(251, 80, 142);
+.pressed{
     background-color: #363738;
 }
 
@@ -652,8 +637,6 @@ body{
 }
 
 .programs-content{
-    opacity: 1;
-    transition: opacity 300ms ease 0s;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -662,6 +645,11 @@ body{
     grid-column-gap: 40px;
     border-radius: 20px;
     padding: 20px;
+}
+
+.opacity{
+    opacity: 1;
+    transition: opacity 1000ms ease 0s;
 }
 
 .content-title{

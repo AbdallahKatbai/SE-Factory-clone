@@ -39,7 +39,7 @@ setInterval(() => {
 }, 12000);
 setInterval(() => {
     left_subtitle.forEach(elm => {
-        
+
     })
 }, 4000);
 //anvbar variables
@@ -60,3 +60,53 @@ a.forEach((elm) => {
         navbar.classList.add('hide')}
 ))
 })
+
+
+//programs part
+const program_title = document.querySelectorAll(' .sub-title')
+const fcs = document.getElementsByClassName('fcs')[0]
+const fsw = document.getElementsByClassName('fsw')[0]
+const fsd = document.getElementsByClassName('fsd')[0]
+const uix = document.getElementsByClassName('uix')[0]
+const programs = document.querySelectorAll(' .programs-contents')
+
+function add_txt_color(elm, index) {
+    if(index == 0){elm.classList.add('orange-txt')}
+        else if (index == 1){elm.classList.add('green-txt')}
+        else if (index == 2)(elm.classList.add('purple-txt'))
+        else if (index == 3)(elm.classList.add('pink-txt'))
+}
+
+function remove_txt_color(elm, index) {
+    if(index == 0){elm.classList.remove('orange-txt')}
+        else if (index == 1){elm.classList.remove('green-txt')}
+        else if (index == 2)(elm.classList.remove('purple-txt'))
+        else if (index == 3)(elm.classList.remove('pink-txt'))
+}
+
+program_title.forEach((elm, index) => {
+    elm.addEventListener('click', function() {
+        program_title.forEach((element, i) => {
+            if (element.classList.contains('pressed') && element != elm ){
+                element.classList.remove('pressed')
+                remove_txt_color(element, i)
+            }
+        })
+        if (!elm.classList.contains('pressed')) {
+            elm.classList.add('pressed')
+            add_txt_color(elm, index)
+        }
+
+        programs.forEach((elmnt,i) => {
+          if(i == index && elmnt.classList.contains('hide')){
+            elmnt.classList.remove('hide')
+            elmnt.classList.add('opacity')
+          }
+          if(i != index){
+            elmnt.classList.add('hide')
+            elmnt.classList.remove('opacity')
+          }  
+        })
+    })
+})
+
