@@ -38,9 +38,7 @@ setInterval(() => {
     
 }, 12000);
 setInterval(() => {
-    left_subtitle.forEach(elm => {
-
-    })
+    
 }, 4000);
 //anvbar variables
 const list = document.querySelectorAll(' .list')
@@ -110,3 +108,34 @@ program_title.forEach((elm, index) => {
     })
 })
 
+//testiminials functionality
+
+const testimonial = document.querySelectorAll(' .testimonials-content')
+const dot = document.querySelectorAll(' dot')
+const testimonials = document.getElementsByClassName('testimonials-container')[0]
+let j = 0
+setInterval(() => {
+setInterval(() => {
+    testimonials.setAttribute('style', 'transform: translatex(-100%) ')
+    testimonials.setAttribute('style', 'transition: transform 10000ms ease')
+    j +=1
+    dot.forEach((elm,i) => {
+        if(j == i){elm.setAttribute('style', 'background-color: black')}
+        else {elm.setAttribute('style', 'background-color: light-grey')}
+    })
+}, 4000);
+testimonials.setAttribute('style', 'transform: translatex(+400%) ')
+testimonials.setAttribute('style', 'transition: transform 10000ms ease')
+j = 0
+}, 12000)
+
+const show_ans = document.querySelectorAll(' .question')
+const ans = document.querySelectorAll(' .answers')
+
+show_ans.forEach((el, i) => {
+    el.addEventListener('click', (() => {
+        console.log('collapse' + i)
+        if(show_ans.classList.contains('collapse')){show_ans.classList.remove('collapse')}
+        else if (!show_ans.classList.contains('collapse')){show_ans.classList.add('collapse')}
+}))
+})
